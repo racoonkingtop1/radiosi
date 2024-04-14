@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Роксана радиосы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="icon" href="assets/LOGO.png">
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header__socials">
+                <a href="" class="header__link">
+                    <img src="assets/icon_web.svg" alt="">
+                </a>
+                <a href="" class="header__link">
+                    <img src="assets/icon_vk.svg" alt="">
+                </a>
+                <a href="" class="header__link">
+                    <img src="assets/icon_tg.svg" alt="">
+                </a>
+            </div>
+            <img src="assets/LOGO.png" alt="Логотип сайта" class="header__logo">
+            <img src="assets/woman.webp" alt="женщина" class="header__woman">
+            <div class="header-texts">
+                <h1>БЕЗ БЕР ДУЛКЫНДА
+                    <br>
+                    <span>РОКСАНА <br>
+                        РАДИОСЫ</span>
+                </h1>
+                <div class="broadcast">
+                    <button class="broadcast__btn">
+                        <img src="assets/play.svg" alt="иконка плей" class="broadcast--play">
+                        <img class="dnone" src="assets/pause.svg" alt="иконка паузы" class="broadcast--pause">
+                    </button>
+                    <p>туры эфир</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+            <div class="order-modal--container">
+                <form class="order-modal">
+                    <h3>заказать поздравление</h3>
+                    <label for="choose-good__input">
+                        <span class="upper-label">Выберите услугу</span>
+                        <div class="choose-good">
+                            <input required value="ПОЗДРАВЛЕНИЕ + одна песня (из базы радио). Звучит в эфире + запись голоса диджея и песня отправляется в WhatsApp 1500₽" class="dnone hidden-input modal-required" name="choose-good__input" type="text">
+                            <p class="good-variety good-variety--chosen">
+                                ПОЗДРАВЛЕНИЕ + одна песня (из базы радио). <br>Звучит в эфире + запись голоса диджея и песня отправляется в WhatsApp 1500₽
+                            </p>
+                            <div class="dnone goods-varieties">
+                                <p class="gv good-variety">
+                                    ПОЗДРАВЛЕНИЕ + одна песня (из базы радио). <br>Звучит в эфире + запись голоса диджея и песня отправляется в WhatsApp 1500₽
+                                </p>
+                                <p class="gv good-variety">
+                                    Запись поздравления на диск 150₽
+                                </p>
+                            </div>
+                            <img class="goods-arrow" src="assets/triangle.svg" alt="иконка окрытия меню">
+                        </div>
+                    </label>
+                    <label for="disc-checkbox" class="disc-checkbox">
+                        <input type="checkbox" name="disc-checkbox" id="">
+                        <span>Диск дополнительно +150₽</span>
+                    </label>
+                    <label for="congrats-text" class="congrats-text">
+                        <span class="upper-label">Текст поздравления</span>
+                        <textarea class="modal-required" required name="congrats-text" id="" cols="30" rows="10"></textarea>
+                    </label>
+                    <div class="modal-inputs">
+                        <label for="">
+                            <span class="upper-label">ФИО заказчика</span>
+                            <input class="modal-required" required type="text">
+                        </label>
+                        <label for="choose-good__input">
+                            <span class="upper-label">Дата выхода</span>
+                            <div class="choose-good">
+                                <input required class="hidden-input dnone" value="02.04.2024" name="date-input" type="text">
+                                <p class="good-variety good-variety--chosen">
+                                    02.04.2024
+                                </p>
+                                <div class="dnone goods-varieties">
+                                    <p class="gv good-variety">
+                                        02.04.2024
+                                    </p>
+                                    <p class="gv good-variety">
+                                        03.04.2024
+                                    </p>
+                                    <p class="gv good-variety">
+                                        04.04.2024
+                                    </p>
+                                </div>
+                                <img class="goods-arrow" src="assets/triangle.svg" alt="иконка окрытия меню">
+                            </div>
+                        </label>
+                        <label for="">
+                            <span class="upper-label">Контактный телефон</span>
+                            <input class="modal-required" required type="phone">
+                        </label>
+                    </div>
+                    <label for="FZ-chechbox" class="FZ-chechbox">
+                        <input class="modal-required" required type="checkbox" name="FZ-chechbox" id="">
+                        <span>
+                            Отправляя заявку, вы соглашаетесь на обработку персональных данных<br>
+                            (Федеральный закон от 27.07.2006 N 152-ФЗ "О персональных данных")
+                        </span>
+                    </label>
+                    <div class="modal-final">
+                        <input class="dnone" type="number" value="150" readonly>
+                        <p class="upper-label">Итоговая сумма: <span>150</span>р.</p>
+                        <button type="submit" id="modal-final-btn" disabled>заказать поздравление</button>
+                    </div>
+                </form>
+            </div>
+            <div class="main__banners dnone">
+                <div class="main__banner banner-1">
+                    <img src="assets/01_icon.svg" alt="" class="banner-corner">
+                    <div>
+                        <p class="banner-name">популяр</p>
+                        <p class="banner-description">татар һәм башкорт <br>башкаручылары</p>
+                    </div>
+                </div>
+                <div class="main__banner banner-2">
+                    <img src="assets/01_icon.svg" alt="" class="banner-corner">
+                    <div>
+                        <p class="banner-name">25 ел</p>
+                        <p class="banner-description">эфирда</p>
+                    </div>
+                </div>
+                <div class="main__banner banner-3">
+                    <img src="assets/01_icon.svg" alt="" class="banner-corner">
+                    <div>
+                        <p class="banner-name">онлайн</p>
+                        <p class="banner-description">котлауларга <br>заказ бирү</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main__contacts">
+                <h2>контакты</h2>
+                <div class="contacts__banners">
+                    <div class="contacts__banner contacts__banner-1">
+                        <p>8 905 181 95 90</p>
+                        <span>реклама</span>
+                    </div>
+                    <div class="contacts__banner contacts__banner-2">
+                        <p>8 906 370 20 20</p>
+                        <span>туры эфир</span>
+                    </div>
+                    <div class="contacts__banner contacts__banner-3">
+                        <p>8 905 181 95 50</p>
+                        <span>котлаулар</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer__links">
+                <div class="footer__link">
+                    <img src="assets/footer-1.svg" alt="иконка ВК">
+                    <span>vk.com/roksanaradio</span>
+                </div>
+
+                <div class="footer__link">
+                    <img src="assets/footer-2.svg" alt="иконка сайта">
+                    <span>roksanaradio.ru</span>
+                </div>
+
+                <div class="footer__link">
+                    <img src="assets/footer-3.svg" alt="иконка телеграм">
+                    <span>t.me/roksanaradiosi</span>
+                </div>
+            </div>
+            <img class="footer__logo" src="assets/LOGO.png" alt="логотип футера">
+        </div>
+    </footer>
+</body>
+</html>

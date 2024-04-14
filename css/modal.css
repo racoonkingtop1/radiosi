@@ -1,0 +1,271 @@
+/* ! МОДАЛКА */
+
+.order-modal--container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-modal {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: fill-available;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: rgb(233, 235, 247, 0.95 );
+
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(215, 216, 222, 0.2);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(215, 216, 222, 0.2);
+    box-shadow: 0px 0px 10px 0px rgba(215, 216, 222, 0.2);
+}
+
+/*  */
+
+.order-modal h3 {
+    font-size: 30px;
+    color: rgb(149, 16, 113);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/*  */
+
+.upper-label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+label {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+input {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 20px 5px 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+/*  */
+
+.choose-good__input {
+     width: 100%;
+}
+
+.choose-good {
+    width: 100%;
+    position: relative;
+}
+
+.goods-varieties {
+    border: 1px solid gray;
+
+    border-top: 1px solid aliceblue;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.good-variety {
+    padding: 5px 20px 5px 10px;
+    background-color: white;
+}
+
+.good-variety:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.good-variety--chosen {
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.goods-arrow {
+    position: absolute;
+    top: calc(50% - 4px);
+    right: 10px;
+    width: 8px;
+    height: 8px;
+    rotate: 180deg;
+}
+
+.goods-opened .good-variety--chosen {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.goods-opened .goods-varieties {
+    display: block !important;
+}
+
+.goods-opened .goods-arrow {
+    rotate: 0;
+}
+
+/*  */
+
+.disc-checkbox {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: start;
+    height: fit-content;
+}
+
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+/*  */
+
+.congrats-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.congrats-text textarea {
+    width: 100%;
+    resize: none;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/*  */
+
+.FZ-chechbox {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
+}
+
+/*  */
+
+.modal-inputs {
+    display: flex;
+    gap: 20px;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.modal-inputs label {
+    flex-basis: calc(100%/2 - 20px/2);
+}
+
+/*  */
+
+.modal-final {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.modal-final p {
+    font-size: 20px;
+}
+
+.modal-final p span {
+    font-size: 24px;
+}
+
+.modal-final button {
+    padding: 10px 10%;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #b30f7f, #6f0e5c, #b20e7e);
+    border: none;
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.modal-final button:disabled {
+    color: black;
+    background: rgb(0, 0, 0, 0.05);
+}
+
+/* !MEDIA */
+
+@media(max-width:720px) {
+    .order-modal--container {
+        position: initial;
+        top: 0;
+        left: 0;
+        margin-left: -20px;
+        height: fit-content;
+    }
+
+    .order-modal {
+        border-radius: 0;
+        background-color: white;
+    }
+
+    .modal-inputs label {
+        flex-basis: 100%;
+    }
+
+    .modal-final {
+        flex-direction: column;
+    }
+
+    .FZ-chechbox {
+        align-items: start;
+        font-size: 12px;
+    }
+
+    .order-modal h3 {
+        margin-bottom: 0;
+    }
+
+    .modal-final button {
+        width: 100%;
+        padding: 20px 0;
+    }
+}
+
+@media(max-width:560px) {
+    .good-variety {
+        font-size: 12px;
+    }
+
+    textarea {
+        font-size: 12px;
+    }
+
+    .disc-checkbox {
+        font-size: 12px;
+    }
+
+    input {
+        font-size: 12px;
+    }
+}
