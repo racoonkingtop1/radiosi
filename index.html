@@ -13,7 +13,7 @@
     <script src="js/index.js" defer></script>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="header-content">
             <div class="header__socials">
                 <a href="" class="header__link">
@@ -28,16 +28,22 @@
             </div>
             <img src="assets/LOGO.png" alt="Логотип сайта" class="header__logo">
             <img src="assets/woman.webp" alt="женщина" class="header__woman">
+            <img src="assets/woman.webp" alt="женщина" class="opacity0 header__woman headerwoman2">
             <div class="header-texts">
-                <h1>БЕЗ БЕР ДУЛКЫНДА
+                <h1 class="h1">БЕЗ БЕР ДУЛКЫНДА
                     <br>
                     <span>РОКСАНА <br>
                         РАДИОСЫ</span>
                 </h1>
+                <h1 class="h1 dnone">кик кук карбонад
+                    <br>
+                    <span>радиосы <br>
+                        роксана</span>
+                </h1>
                 <div class="broadcast">
-                    <button class="broadcast__btn">
+                    <button data-player="energy" data-skin="green" data-width="200" data-autoplay="1" data-volume="80" data-streamurl="https://listen1.myradio24.com/2761" class="broadcast__btn">
                         <img src="assets/play.svg" alt="иконка плей" class="broadcast--play">
-                        <img class="dnone" src="assets/pause.svg" alt="иконка паузы" class="broadcast--pause">
+                        <img src="assets/pause.svg" alt="иконка паузы" class="broadcast--play dnone">
                     </button>
                     <p>туры эфир</p>
                 </div>
@@ -46,7 +52,7 @@
     </header>
     <main>
         <div class="main-content">
-            <div class="order-modal--container">
+            <div class="dnone order-modal--container">
                 <form class="order-modal">
                     <h3>заказать поздравление</h3>
                     <label for="choose-good__input">
@@ -120,7 +126,7 @@
                     </div>
                 </form>
             </div>
-            <div class="main__banners dnone">
+            <div class="main__banners">
                 <div class="main__banner banner-1">
                     <img src="assets/01_icon.svg" alt="" class="banner-corner">
                     <div>
@@ -135,7 +141,7 @@
                         <p class="banner-description">эфирда</p>
                     </div>
                 </div>
-                <div class="main__banner banner-3">
+                <div id="orderBanner" class="main__banner banner-3">
                     <img src="assets/01_icon.svg" alt="" class="banner-corner">
                     <div>
                         <p class="banner-name">онлайн</p>

@@ -15,15 +15,25 @@
     display: none !important;
 }
 
-body {
+.opacity0 {
+   opacity: 0;
+}
 
+body {
+    
 }
 
 /* ! HEADER */
 
 header {
     background: rgb(47,131,186);
-    background: linear-gradient(0deg, rgba(47,131,186,1) 0%, rgba(45,159,181,1) 100%);  
+    background: linear-gradient(0deg, rgba(47,131,186,1) 0%, rgba(45,159,181,1) 100%);    
+    transition: 0.5s;
+}
+
+.headergreen {
+    background: rgb(47,186,56);
+    background: linear-gradient(0deg, rgb(47, 186, 56) 0%, rgb(50, 181, 45) 100%);
 }
 
 .header__socials {
@@ -67,6 +77,11 @@ header {
     position: absolute;
     bottom: 0;
     right: 90px;
+    transition: 0.5s;
+}
+
+.headerwoman2 {
+    transform: scale(-1, 1);
 }
 
 /* ? HEADER TEXTS */
@@ -86,6 +101,8 @@ h1 {
     text-transform: uppercase;
     line-height: 1.2;
     text-align: left;
+    transition: 0.2s;
+    overflow: hidden;
 }
 
 h1 span {
