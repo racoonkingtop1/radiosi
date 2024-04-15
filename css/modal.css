@@ -27,6 +27,7 @@
     margin: auto;
     border-radius: 10px;
     background-color: rgb(233, 235, 247, 0.95 );
+    position: relative;
 
     -webkit-box-shadow: 0px 0px 10px 0px rgba(215, 216, 222, 0.2);
     -moz-box-shadow: 0px 0px 10px 0px rgba(215, 216, 222, 0.2);
@@ -34,6 +35,19 @@
 }
 
 /*  */
+
+.modalCross {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.modalCross:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
 
 .order-modal h3 {
     font-size: 30px;
@@ -210,6 +224,10 @@ input[type="checkbox"] {
     color: white;
     transition: 0.2s;
     cursor: pointer;
+}
+
+.modal-final button:hover {
+    opacity: 0.8;
 }
 
 .modal-final button:disabled {

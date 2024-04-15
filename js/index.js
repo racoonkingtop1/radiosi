@@ -60,7 +60,7 @@ orderBanner.addEventListener(`click`, function(evt) {
 })
 
 document.addEventListener(`click`, function(evt) {
-    if(evt.target === orderModal) {
+    if(evt.target === orderModal || evt.target.classList.contains(`modalCross`)) {
       orderModal.classList.add(`dnone`)
     }
 })
