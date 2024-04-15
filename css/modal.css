@@ -12,6 +12,8 @@
     padding-bottom: 20px;
     overflow-y: scroll;
     z-index: 3;
+    background-color: rgb(0, 0, 0, 0.2);
+    transition: 0.2s;
 }
 
 .order-modal {
@@ -28,10 +30,16 @@
     border-radius: 10px;
     background-color: rgb(233, 235, 247, 0.95 );
     position: relative;
+    transform: scale(0);
+    transition: 0.2s;
 
     -webkit-box-shadow: 0px 0px 10px 0px rgba(215, 216, 222, 0.2);
     -moz-box-shadow: 0px 0px 10px 0px rgba(215, 216, 222, 0.2);
     box-shadow: 0px 0px 10px 0px rgba(215, 216, 222, 0.2);
+}
+
+.modal-show {
+    transform: scale(1) !important;
 }
 
 /*  */

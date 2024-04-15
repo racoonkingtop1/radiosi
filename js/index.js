@@ -54,14 +54,21 @@ function addListenerMulti(el, s, fn) {
 
 const orderBanner = document.querySelector(`#orderBanner`);
 const orderModal = document.querySelector(`.order-modal--container`);
+const modalContent = document.querySelector(`.order-modal`);
 
 orderBanner.addEventListener(`click`, function(evt) {
   orderModal.classList.remove(`dnone`)
+  setTimeout(function() {
+    modalContent.classList.add(`modal-show`)
+  }, 100)
 })
 
 document.addEventListener(`click`, function(evt) {
     if(evt.target === orderModal || evt.target.classList.contains(`modalCross`)) {
-      orderModal.classList.add(`dnone`)
+      modalContent.classList.remove(`modal-show`)
+      setTimeout(function() {
+        orderModal.classList.add(`dnone`)
+      }, 100)
     }
 })
 
