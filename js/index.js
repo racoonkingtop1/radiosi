@@ -98,7 +98,12 @@ const headerWoman = document.querySelectorAll(`.header__woman`);
 
 const headerColors = [
   "linear-gradient(0deg, rgba(47,131,186,1) 0%, rgba(45,159,181,1) 100%)",
-  "linear-gradient(0deg, rgb(47, 186, 56) 0%, rgb(50, 181, 45) 100%)"
+  "linear-gradient(0deg, rgb(47, 186, 56) 0%, rgb(50, 181, 45) 100%)",
+  "linear-gradient(0deg, rgba(47,131,186,1) 0%, rgba(45,159,181,1) 100%)",
+  "linear-gradient(0deg, rgb(47, 186, 56) 0%, rgb(50, 181, 45) 100%)",
+  "linear-gradient(0deg, rgba(47,131,186,1) 0%, rgba(45,159,181,1) 100%)",
+  "linear-gradient(0deg, rgb(47, 186, 56) 0%, rgb(50, 181, 45) 100%)",
+  "linear-gradient(0deg, rgba(47,131,186,1) 0%, rgba(45,159,181,1) 100%)"
 ]
 
 let headerSlide = 0;

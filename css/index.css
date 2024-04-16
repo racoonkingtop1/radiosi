@@ -73,16 +73,13 @@ header {
 }
 
 .header__woman {
-    width: 600px;
+    height: 600px;
     position: absolute;
     bottom: 0;
     right: 90px;
     transition: 0.5s;
 }
 
-.headerwoman2 {
-    transform: scale(-1, 1);
-}
 
 /* ? HEADER TEXTS */
 
@@ -334,7 +331,7 @@ footer {
     }
     
     .header__woman {
-        width: 450px;
+        height: 450px;
     }
 
     .header__logo {
@@ -398,7 +395,7 @@ footer {
     }
 
     .header__woman {
-        width: 350px;
+        height: 350px;
         right: 50px;
     }
 
