@@ -165,7 +165,7 @@ h1 span {
   background: #ffffff;
   cursor: ew-resize;
   box-shadow: 0 0 2px 0 #555;
-  transition: background .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .volumvalue::-moz-range-thumb {
@@ -176,7 +176,7 @@ h1 span {
   background: #ff4500;
   cursor: ew-resize;
   box-shadow: 0 0 2px 0 #555;
-  transition: background .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .volumvalue::-ms-thumb {
@@ -187,7 +187,7 @@ h1 span {
   background: #ffffff;
   cursor: ew-resize;
   box-shadow: 0 0 2px 0 #555;
-  transition: background .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .volumvalue::-webkit-slider-thumb:hover {
