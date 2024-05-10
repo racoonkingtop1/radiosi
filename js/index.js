@@ -84,8 +84,8 @@ const headerColors = [
   "linear-gradient(180deg, rgb(225, 0, 255),rgb(0, 149, 255))",
   "linear-gradient(0deg,rgb(0, 126, 210),rgb(0, 194, 215))",
   "linear-gradient(0deg, rgb(139, 0, 255),rgb(45, 177, 210))",
-  "linear-gradient(180deg, rgb(225, 0, 255),rgb(0, 149, 255))",
-  "linear-gradient(0deg, rgb(139, 0, 255),rgb(45, 177, 210))"
+  "linear-gradient(180deg, rgb(225, 0, 255),rgb(0, 149, 255))"
+  // "linear-gradient(0deg, rgb(139, 0, 255),rgb(45, 177, 210))"
 ]
 
 let headerSlide = 0;
